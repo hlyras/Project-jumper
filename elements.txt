@@ -1,0 +1,129 @@
+// All the resources of the game
+
+Files:
+{
+	elements.txt
+
+	index.html -- 
+
+	style.css -- 
+
+
+	SYSTEM ----
+
+		assets.js -- 
+
+		camera.js -- 
+
+		canvas.js -- 
+
+		engine.js -- *
+
+		gamestate.js -- *
+
+		listeners.js -- *
+
+	OBJECTS ----
+
+		checkpoint.js -- *
+
+		Deadzone.js -- *
+
+		Enemy.js -- *
+
+		Player.js -- *
+
+		Wall.js -- *
+
+	SPRITES ----
+
+		Images --- 
+
+			Enemy.png
+			background.png
+			ground1.png
+			ground2.png
+			p.png
+			pr.png
+
+		Background.js -- *
+
+		Rendering.js -- *
+}
+
+SYSTEM:
+{
+	loop --  *
+
+		gamestate -- *
+
+
+	update -- *
+
+
+	render -- *
+
+
+	assets -- *
+
+
+	camera -- *
+
+
+	canvas -- *
+
+
+	gamestate -- *
+
+		game menu
+
+
+	listeners -- *
+
+
+}
+
+
+VIEWS:
+{
+	index -- *
+
+
+	css -- *
+
+
+	sprites -- *
+
+
+	drawSystem *
+
+}
+
+
+OBJECTS:
+{
+	Player --
+
+		movements 
+
+			walk - *
+
+
+			jump - *
+
+
+		images *
+
+
+	Points -- *
+
+
+	Enemy -- *
+
+
+	Deadzone -- *
+
+
+	Wall -- *
+
+}
