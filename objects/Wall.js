@@ -26,7 +26,7 @@ var groundW = 0;
 
 Solid.prototype.contact = function(){
 	// Left touch on Solid
-	if(Player.x + Player.width >= this.left() - 15 && Player.x + Player.width <= this.left() + 5 && Player.y + Player.width >= this.uper() && Player.y <= this.bottom()&&mvRight){
+	if(Player.x + Player.width >= this.left() - 15 && Player.x + Player.width <= this.left() + 8 && Player.y + Player.width >= this.uper() && Player.y <= this.bottom()&&mvRight){
 		Player.x = this.left() - Player.width - 2;
 		leftTouch = true;
 	} else if(Player.x + Player.width < this.left()){
@@ -34,7 +34,7 @@ Solid.prototype.contact = function(){
 	}
 
 	// Right touch on Solid
-	if(Player.x <= this.right() + 15 && Player.x >= this.right() - 5 && Player.y + Player.width >= this.uper() && Player.y <= this.bottom()&&mvLeft){
+	if(Player.x <= this.right() + 15 && Player.x >= this.right() - 8 && Player.y + Player.width >= this.uper() && Player.y <= this.bottom()&&mvLeft){
 		Player.x = this.right() + 2;
 		rightTouch = true;
 	} else if(Player.x > this.right()){
@@ -42,7 +42,7 @@ Solid.prototype.contact = function(){
 	}
 
 	// Uper touch on Solid
-	if(Player.y + Player.height >= this.uper() - 10 && Player.y + Player.height <= this.uper() + 5 && Player.x + Player.width >= this.left() && Player.x <= this.right()){
+	if(Player.y + Player.height >= this.uper() - 15 && Player.y + Player.height <= this.uper() + 5 && Player.x + Player.width >= this.left() && Player.x <= this.right()){
 		Player.dirY = 0;
 		Player.onFalling = false;
 		Player.onGround = true;

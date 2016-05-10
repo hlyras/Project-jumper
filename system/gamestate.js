@@ -1,9 +1,7 @@
 var gamestate = {
 	LOADING: true,
 	PAUSED: false,
-	PLAYING: false,
-	LOSE: false,
-	WIN: false
+	PLAYING: false
 }
 
 function pauseGame(key){
@@ -23,5 +21,7 @@ function lose() {
 		Final.x = 4800;
 		Final.y = 920;
 		Final.color = "green";
+		Player.onGround = false;
+		Player.onFalling = true;
 	//}
 }

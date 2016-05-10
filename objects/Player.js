@@ -99,10 +99,10 @@ function moves(){
 		Player.onGround = false;
 		Player.onFalling = true;
 		if(Player.dirY > -1){
-			Player.dirY -= 20;
+			Player.dirY -= 25;
 		}
 		if(Player.dirX < 10){
-			Player.dirX += 10;
+			Player.dirX += 15;
 		}
 		leftJump = false;
 	}
@@ -112,10 +112,10 @@ function moves(){
 		Player.onGround = false;
 		Player.onFalling = true;
 		if(Player.dirY > -1){
-			Player.dirY -= 20;
+			Player.dirY -= 25;
 		}
 		if(Player.dirX < 10){
-			Player.dirX += 10;
+			Player.dirX += 15;
 		}
 		rightJump = false;
 	}

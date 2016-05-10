@@ -9,10 +9,7 @@ var Initial = {
 function FinalTouchInitial() {
 	if(Initial.x < Final.x + Final.width  && Initial.x + Initial.width  > Final.x &&
 		Initial.y < Final.y + Final.height && Initial.y + Initial.height > Final.y){
-		gamestate.PLAYING = false;
-		gamestate.PAUSED = false;
-		gamestate.WIN = true;
-		alert('you win');
+		lose();
 	}
 }
 
